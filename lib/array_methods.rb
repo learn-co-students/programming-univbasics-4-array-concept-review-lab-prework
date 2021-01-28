@@ -1,11 +1,22 @@
-def find_element_index(array, value_to_find)
-  # Add your solution here
+require "pry"
+def find_element_index(scale, value_to_find)
+  counter = 0 
+  while counter < scale.length do
+  if scale[counter] == value_to_find
+ return counter
+#binding.pry
+    end
+counter += 1
+
+  end
 end
 
+
+
 def find_max_value(array)
-  # Add your solution here
+  array.max 
 end
 
 def find_min_value(array)
-  # Add your solution here
+  array.min 
 end
